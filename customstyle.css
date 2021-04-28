@@ -1,0 +1,344 @@
+/* =====================================================================
+ ================== Default css=================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #353353;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+ul,
+ol,
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+a:hover {
+  color: #fff;
+}
+img {
+  max-width: 100%;
+}
+.shadows {
+  box-shadow: 0px 5px 20px 0px rgb(71 69 97 / 70%);
+  border-radius: 10px;
+}
+.about-img-text {
+  padding: 30px 25px 25px;
+}
+
+/* =====================================================================
+ ================== Sidenav css=================*/
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #353353;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-right: 1px solid #4a4865;
+}
+.sidenav_inner {
+  position: relative;
+}
+.sidenav_inner::before {
+  content: "";
+  background-color: #7280ff;
+  position: absolute;
+  width: 93px;
+  height: 200px;
+  top: -115px;
+  left: 0;
+  transform: rotate(50deg);
+  z-index: -1;
+}
+.sidenav_inner::after {
+  content: "";
+  background-color: #7280ff;
+  position: absolute;
+  width: 93px;
+  height: 200px;
+  top: -115px;
+  right: 0;
+  transform: rotate(-50deg);
+  z-index: -1;
+}
+.nav_image {
+  border-bottom: 1px solid #4a4865;
+}
+.my_nav_image {
+  width: 70%;
+  height: 140px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+}
+
+.nav_link ul li {
+  margin-bottom: 30px;
+}
+.nav_link ul li a {
+  color: #fff;
+}
+.nav_link ul li a:hover {
+  color: #7280ff;
+}
+.nav_link ul li a i {
+  color: #7280ff;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+/* =====================================================================
+ ================== Main-content css=================*/
+
+.main-content {
+  margin-left: 200px;
+}
+/* scroll icon */
+.scroll{
+  position: fixed;
+  right:20px;
+  bottom: 800px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+  pointer-events: none;
+  z-index: 100;
+
+}
+.scroll:hover{
+  transform: translateY(-5px);
+}
+.scroll.activated{
+  bottom: 45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+/* =====================================================================
+ ================== banner css=================*/
+.banner_area {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 1);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("./image/bann.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.my-banner-image {
+  width: 38%;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: contain;
+}
+.home-image-title h1 {
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+.social {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.social a i {
+  display: inline-block;
+  color: #fff;
+  padding: 10px;
+  margin-right: 10px;
+  width: 40px;
+  border: 0.5px solid #5a5958;
+  border-radius: 50%;
+  transition: all 1s;
+}
+.social a i:hover {
+  background-color: #7280ff;
+}
+
+/* =====================================================================
+ ================== About me css=================*/
+.common-heading {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+.common-heading::before {
+  content: attr(data-before-content);
+  position: absolute;
+  left: 20%;
+  top: -50%;
+  font-size:2em;
+  letter-spacing: 5px;
+  opacity: 0.1;
+}
+.common-heading span {
+  color: #7b88ff;
+}
+.about-img {
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+.about-img::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 300%;
+  left: -70%;
+  top: -100%;
+  background: #7280ff;
+  transform: rotate(45deg);
+}
+.about-img img {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.personal-info {
+  padding: 10px;
+}
+.personal-info ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.personal-info ul li {
+  width: 50%;
+  padding: 0.5rem 0;
+}
+.personal-info ul li span {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+}
+/* =====================================================================
+ ================== services css=================*/
+.service {
+  padding: 15px 10px;
+  transition: all 1s;
+  cursor: pointer;
+}
+.service:hover {
+  box-shadow: none;
+  transform: translateY(-20px);
+}
+.service h4 {
+  margin-top: 10px;
+}
+.service i {
+  display: inline-block;
+  margin-top: 10px;
+  transition: all 1s;
+  color: #7280ff;
+}
+.service:hover i {
+  transform: scale(1.3);
+  color: #fff;
+}
+
+/* =====================================================================
+ ================== Skill css=================*/
+.skill-title {
+  border-bottom: 1px solid #4a4865;
+}
+.skill-title h4 {
+  font-weight: bold;
+}
+
+/* =====================================================================
+ ================== Portfolio css=================*/
+.common-heading-portfolio {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+.common-heading-portfolio::before {
+  content: attr(data-before-content);
+  position: absolute;
+  left: 0%;
+  top: -50%;
+  font-size: 80px;
+  letter-spacing: 5px;
+  opacity: 0.1;
+}
+.common-heading-portfolio span {
+  color: #7b88ff;
+}
+.filter {
+  display: flex;
+  justify-content: center;
+}
+.filter button {
+  margin-left: 15px;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.element-item{
+  width: 30%;
+  margin:10px 10px ;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.element-item:hover{
+  opacity: 0.9;
+  transform: translateY(-10px);
+}
+.element-item img{
+  height: 250px;
+ border-radius: 5px;
+}
+
+/* =====================================================================
+ ================== Contact css=================*/
+ .touch-area{
+   transition: all 1s;
+ }
+ .touch-area:hover{
+   cursor: pointer;
+   transform: translateY(-10px);
+   box-shadow: none;
+   box-shadow: none;
+ }
+.touch-area i{
+  background-color: #7280ff;
+  padding: 15px;
+  display: inline-block;
+  margin-bottom: 5px;
+  border-radius: 50%;
+ 
+}
+/* =====================================================================
+ ================== Fotter css=================*/
+.footer{
+  background-color: #7280FF;
+  padding: 10px 0;
+}

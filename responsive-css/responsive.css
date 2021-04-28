@@ -1,0 +1,13 @@
+@media all and (min-width:1920px) {
+    
+    .nav_link ul li{
+        margin-bottom: 40px;
+    }
+    .nav_link ul li a{
+        font-size: 1.5em;
+    }
+
+}
+@media all and (max-width:768px){
+    
+}
