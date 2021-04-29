@@ -22,7 +22,15 @@
     <!-- responsive css -->
     <link rel="stylesheet" href="./responsive-css/responsive.css">
   </head>
-  <body data-spy="scroll" data-target=".spy" data-offset="20">
+  <body>
+    <!-- mobile-menu -->
+    <button class="menu mobile-menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="line line2" d="M 20,50 H 80" />
+        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+    </button>
     <!-- side nav -->
     <div class="sidenav">
       <div class="sidenav_inner">
@@ -69,7 +77,7 @@
       <div class="banner_area "id="home">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-12">
               <div class="home-content text-center mt-5">
                 <div class="home-image wow fadeInLeft" data-wow-delay="0.3s">
                   <img
@@ -115,19 +123,19 @@
       <div class="about_me pt-5 scrollspy"id="about">
         <div class="container">
           <div class="row">
-            <div class="col-6 pt-5 m-auto text-center wow fadeInUpBig">
+            <div class="col-lg-6 col-md-6 pt-5 m-auto text-center wow fadeInUpBig">
               <h1 class="common-heading" data-before-content="ABOUT">
                 ABout <span>Me</span>
               </h1>
             </div>
           </div>
           <div class="row mt-5">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-12">
               <div class="about-img shadows wow fadeInUp" data-wow-delay="0.3s">
                 <img src="./image/about-img-elahi.jpg" alt="" />
               </div>
             </div>
-            <div class="col-lg-8 text-white">
+            <div class="col-lg-8 col-md-12 text-white">
               <div
                 class="about-img-text shadows wow fadeInLeft"
                 data-wow-delay="0.3s"
@@ -193,14 +201,14 @@
       <div class="my-service pt-5 scrollspy" id="service">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 pt-5 text-center m-auto wow fadeInUpBig">
+            <div class="col-lg-6 col-md-12 col-sm-12 pt-5 text-center m-auto wow fadeInUpBig">
               <h1 class="common-heading" data-before-content="SERVICE">
                 MY <span>SERVICE</span>
               </h1>
             </div>
           </div>
           <div class="row mt-5">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-12 col-sm-12 ">
               <div
                 class="service shadows text-white text-center wow fadeInUpBig"
               >
@@ -212,7 +220,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-12 col-sm-12">
               <div
                 class="service shadows text-white text-center wow fadeInUpBig"
               >
@@ -224,7 +232,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-12 col-sm-12">
               <div
                 class="service shadows text-white text-center wow fadeInUpBig"
               >
@@ -238,7 +246,7 @@
             </div>
           </div>
           <div class="row mt-5">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-12 col-sm-12">
               <div
                 class="service shadows text-white text-center wow fadeInUpBig"
               >
@@ -250,7 +258,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-12 col-sm-12">
               <div
                 class="service shadows text-white text-center wow fadeInUpBig"
               >
@@ -262,7 +270,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-12 col-sm-12">
               <div
                 class="service shadows text-white text-center wow fadeInUpBig"
               >
@@ -289,7 +297,7 @@
             </div>
           </div>
           <div class="row mt-4">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-12 col-sm-12">
               <div class="coding-skill p-3 shadows text-white wow fadeInUpBig">
                 <div class="skill-title">
                   <h5>Coding Skills</h5>
@@ -380,7 +388,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-12 col-sm-12">
               <div class="coding-skill p-3 shadows text-white wow fadeInUpBig">
                 <div class="skill-title">
                   <h5>Language Skills</h5>
@@ -478,7 +486,7 @@
       <div class="portfolio-area mt-5 scrollspy"id="portfolio">
         <div class="container">
           <div class="row">
-            <div class="col-6 pt-5 m-auto text-center wow fadeInUpBig">
+            <div class="col-lg-6 col-md-12 col-sm-12 pt-5 m-auto text-center wow fadeInUpBig">
               <h1
                 class="common-heading-portfolio"
                 data-before-content="PORTFOLIO"
@@ -501,24 +509,28 @@
               Psd To Html
             </button>
           </div>
-          <div class="grid mt-5 wow fadeInUpBig">
-            <div class="element-item transition html " data-category="html">
-              <img src="./image/psdtohtl6.png" alt="">
-            </div>
-            <div class="element-item transition html " data-category="html">
-              <img src="./image/psdtohtml4.png" alt="">
-            </div>
-            <div class="element-item transition html " data-category="html">
-              <img src="./image/psdtohtml5.png" alt="">
-            </div>
-            <div class="element-item transition web " data-category="web">
-              <img src="./image/web-design.png" alt="">
-            </div>
-            <div class="element-item transition web " data-category="web">
-              <img src="./image/web-design1.jpg" alt="">
-            </div>
-            <div class="element-item transition web " data-category="web">
-              <img src="./image/web-design2.jpg" alt="">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="grid mt-5 wow fadeInUpBig">
+                <div class="element-item transition html " data-category="html">
+                  <img src="./image/psdtohtl6.png" alt="">
+                </div>
+                <div class="element-item transition html " data-category="html">
+                  <img src="./image/psdtohtml4.png" alt="">
+                </div>
+                <div class="element-item transition html " data-category="html">
+                  <img src="./image/psdtohtml5.png" alt="">
+                </div>
+                <div class="element-item transition web " data-category="web">
+                  <img src="./image/web-design.png" alt="">
+                </div>
+                <div class="element-item transition web " data-category="web">
+                  <img src="./image/web-design1.jpg" alt="">
+                </div>
+                <div class="element-item transition web " data-category="web">
+                  <img src="./image/web-design2.jpg" alt="">
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -528,21 +540,21 @@
       <div class="contact-area mt-5 scrollspy" id="contact">
         <div class="container">
           <div class="row mt-5">
-            <div class="col-6 m-auto text-center wow fadeInUpBig">
+            <div class="col-lg-6 col-md-12 col-sm-12 m-auto text-center wow fadeInUpBig">
               <h1 class="common-heading" data-before-content="CONTACT">
                 CON<span>TACT</span>
               </h1>
             </div>
           </div>
           <div class="row mt-5">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-12 col-sm-12">
               <div class="touch-area text-white p-3 shadows text-center">
                 <i class="fa fa-3x fa-envelope" aria-hidden="true"></i>
                 <h3>Email Address :</h3>
-                <span>alahi.cool@gmail.com [For communication]</span>
+                <span>alahi.cool@gmail.com [For communicate]</span>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-12 col-sm-12">
               <div class="touch-area text-white p-3 shadows text-center wow fadeInUpBig">
                 <i class="fa fa-briefcase fa-3x" aria-hidden="true"></i>
                 <h3 class="m-1">Marketplace Profile :</h3>
@@ -551,7 +563,7 @@
                <a class="btn btn-primary" href="https://www.freelancer.com/u/alahicool"target="_blank">Freelancer</a>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-12 col-sm-12">
               <div class="touch-area text-white p-3 shadows text-center wow fadeInUpBig">
                 <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
                 <h3>Phone Number:</h3>
@@ -561,7 +573,7 @@
             </div>
           </div>
           <div class="row mt-5">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-12 col-sm-12">
               <div class="form shadows p-3 text-white wow fadeInUpBig">
                 <form>
                   <div class="mb-3">
@@ -580,11 +592,11 @@
                 </form>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="mt-1 map shadows wow fadeInUpBig">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="mt-1 map shadows wow fadeInUpBig m-auto">
                 <iframe
                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14554.037847964491!2d89.96712683050737!3d24.223953949727413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fdff3bcc42b5e9%3A0x10375cba56d2a999!2sKaratia%2C%20Bangladesh!5e0!3m2!1sen!2skw!4v1619550427488!5m2!1sen!2skw"
-                  width="450" 
+                  width="450"
                   height="360" 
                   allowfullscreen="" 
                   loading="lazy"
@@ -597,7 +609,7 @@
       <div class="footer mt-4">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 m-auto text-white text-center">
+            <div class="col-lg-6 col-md-12 col-sm-12 m-auto text-white text-center">
               <i class="fa fa-copyright" aria-hidden="true"></i>
               <span>Copyright 2021 Elahi Sikder</span>
             </div>
