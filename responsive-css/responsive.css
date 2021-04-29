@@ -9,6 +9,7 @@
 
 }
 @media all and (max-width:768px){
+  
     .banner_area{
         height: 100vh;
         padding: 25px 0;
@@ -63,6 +64,69 @@
         width: 100% !important;
     }
 }
-@media all and (max-width:411px){
+@media all and (max-width:425px){
+    .menu {
+        right: 27px;  
+    }
+    .home-image-title h1 {
+        font-size: 36px;
+    }
+    svg {
+        width: 50px;
+        height: 50px;
+    }
+    .my-banner-image {
+        width: 49%;
+        display: block;
+        margin: 0 54px;
+    }
+    .common-heading-portfolio::before {
+        left: 16%;
+        top: -28%;
+        font-size: 43px;
+    }
+    .scroll {
+        right: 7px;
+    }
 
+}
+@media all and (max-width:375px){
+    .common-heading::before {
+        content: attr(data-before-content);
+        position: absolute;
+        left: 20%;
+        top: -34%;
+        font-size: 44px;
+        letter-spacing: 5px;
+        opacity: 0.1;
+    }
+    .my-banner-image {
+        width: 56%;
+        display: block;
+        margin: 0 60px;
+    }
+    .personal-info ul li {
+        width: 100%;
+    }
+    .scroll {
+        right: 8px;
+    }
+}
+
+@media all and (max-width:316px){
+    .common-heading-portfolio::before {
+        left: 10%;
+        top: -23%;
+        font-size: 34px;
+    }
+    .common-heading::before {
+        left: 20%;
+        top: -8%;
+        font-size: 30px;
+    }
+    .my-banner-image {
+        width: 66%;
+        display: block;
+        margin: 0 40px;
+    }
 }
