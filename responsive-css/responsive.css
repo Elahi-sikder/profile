@@ -9,5 +9,60 @@
 
 }
 @media all and (max-width:768px){
-    
+    .banner_area{
+        height: 100vh;
+        padding: 25px 0;
+    }
+    .menu{
+        display: initial;
+        position: fixed;
+        right: 100px;
+        top: 40px;
+        z-index: 11111;
+        background-color: #0055B3;
+        border-radius: 50%;
+        color: #fff;
+    }
+    .sidenav{
+        width: 0;
+        visibility: hidden;
+        overflow:hidden;
+        transition: all 0.5s;
+    }
+    .scroll{
+        right: 60px;
+    }
+    .sidenavactive{
+        visibility: visible;
+        width: 200px;
+        z-index: 11111;
+    }
+    .social a i { 
+        padding: 13px;
+        width: 44px;
+        text-align: center;
+    }
+
+    .main-content{
+        margin: 0;
+    }
+    .home-content{
+        text-align: initial !important;
+    }
+    .my-banner-image {
+        width: 38%;
+    }
+    .common-heading-portfolio::before {
+        left: 8%;
+        top: -76% 
+    }
+    .element-item img {
+        height: 200px;
+    }
+    iframe{
+        width: 100% !important;
+    }
+}
+@media all and (max-width:411px){
+
 }
