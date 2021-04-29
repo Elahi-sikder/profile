@@ -20,7 +20,7 @@ $(document).ready(function(){
 // init Isotope
 let $grid = $('.grid').isotope({
   itemSelector: '.element-item',
-  layoutMode: 'fitRows'
+  layoutMode: 'fitRows',
 });
 
 // filter functions
@@ -55,6 +55,11 @@ $('.button-group').each( function( i, buttonGroup ) {
   });
 });
 
+// mobile-menu
+$('.menu').click(function(){
+  $('.sidenav').toggleClass('sidenavactive')
+})
+
 })
 
 // wow
@@ -82,14 +87,7 @@ function scrolled(){
     }
   })
   scroll.onclick = function(){
-    window.scrollTo({top:0,behavior:"smooth"})
+    window.location.href='#home'
   }
 }
 scrolled()
-
-
-
-
-
-
-
