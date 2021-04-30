@@ -8,7 +8,69 @@
     }
 
 }
+@media all and (max-width:1183px){
+    .my-banner-image {
+        width: 45%;
+    }
+}
+@media all and (max-width:1111px){
+    iframe {
+        width: 96%;
+    }
+}
+@media all and (max-width:1010px){
+    .my-banner-image {
+        width: 53%;
+    }
+    .home-image-title h1 {
+        font-size: 49px; 
+    }
+    .common-heading::before {
+        left: 12%;
+    }
+}
+@media all and (max-width:998px){
+    .home-image-title h1 {
+        font-size: 48px;
+    }
+}
+@media all and (max-width:992px){
+    .my-banner-image {
+        width: 30%;
+    }
+    iframe {
+        width: 100%;
+    }
+    .common-heading::before {
+        font-size: 8vw;
+        width: 100%;
+        text-align: center;
+        top: -23px;
+        left: 0;
+    }
+    .common-heading-portfolio::before {
+        left: 18%;
+        top: -67%;
+    }
+
+}
+@media all and (max-width:800px){
+    .my-banner-image {
+        width: 35%;
+    }
+    .common-heading-portfolio::before {
+        top: -67%;
+        width: 100%;
+        font-size: 8vw;
+    }
+}
+
 @media all and (max-width:768px){
+
+    svg{
+        width: 50px;
+        height: 50px;
+    }
   
     .banner_area{
         height: 100vh;
@@ -23,6 +85,9 @@
         background-color: #0055B3;
         border-radius: 50%;
         color: #fff;
+    }
+    .personal-info ul li {
+        width: 100%;
     }
     .sidenav{
         width: 0;
@@ -43,6 +108,9 @@
         width: 44px;
         text-align: center;
     }
+    .common-heading::before {
+        top: -15px;
+    }
 
     .main-content{
         margin: 0;
@@ -54,16 +122,55 @@
         width: 38%;
     }
     .common-heading-portfolio::before {
-        left: 8%;
-        top: -76% 
+        left: 0%;
+        top: -44%;
     }
-    .element-item img {
-        height: 200px;
+    .filter-container .filtr-item {
+        width: 48%;
     }
+
     iframe{
         width: 100% !important;
     }
 }
+@media all and (max-width:760px){
+    .menu {
+        right: 44px;
+    }
+    svg {
+        width: 70px !important;
+        height: 70px;
+    }
+    .personal-info ul li {
+        width: 100%;
+    }
+}
+@media all and (max-width:549px){
+    .common-heading::before {
+        font-size: 11vw;
+    }
+    .common-heading-portfolio::before {
+        top: -25%;
+    }
+    .filter-control {
+        margin-top: 18px;
+    }
+
+}
+@media all and (max-width:473px){
+    .my-banner-image {
+        width: 44%;
+    }
+    .filter-container .filtr-item {
+        width: 44%;
+    }
+    .filter-container .filtr-item img {
+        width: 100%;
+        height: 90%;
+    }
+}
+
+
 @media all and (max-width:425px){
     .menu {
         right: 27px;  
@@ -71,19 +178,14 @@
     .home-image-title h1 {
         font-size: 36px;
     }
-    svg {
-        width: 50px;
-        height: 50px;
-    }
+
     .my-banner-image {
         width: 49%;
         display: block;
         margin: 0 54px;
     }
     .common-heading-portfolio::before {
-        left: 16%;
-        top: -28%;
-        font-size: 43px;
+        left: 0;
     }
     .scroll {
         right: 7px;
@@ -92,13 +194,19 @@
 }
 @media all and (max-width:375px){
     .common-heading::before {
-        content: attr(data-before-content);
-        position: absolute;
-        left: 20%;
-        top: -34%;
-        font-size: 44px;
-        letter-spacing: 5px;
-        opacity: 0.1;
+        left: 0%;
+        font-size: 13vw;
+    }
+    .common-heading-portfolio::before {
+        left: 0;
+        font-size: 11vw;
+    }
+    .filter-control ul li.btn.btn-primary.list.active {
+        line-height: 3;
+    }
+    .filter-container .filtr-item img {
+        width: 100%;
+        height: 78%;
     }
     .my-banner-image {
         width: 56%;
@@ -114,15 +222,12 @@
 }
 
 @media all and (max-width:316px){
-    .common-heading-portfolio::before {
-        left: 10%;
-        top: -23%;
-        font-size: 34px;
-    }
     .common-heading::before {
-        left: 20%;
-        top: -8%;
-        font-size: 30px;
+        top: -49%;
+        font-size: 16vw;
+    }
+    .common-heading-portfolio::before {
+        font-size: 12vw;
     }
     .my-banner-image {
         width: 66%;
@@ -130,7 +235,31 @@
         margin: 0 40px;
     }
 }
-
+@media all and (max-width:272px){
+    .my-banner-image {
+        width: 79%;
+        margin: 0px 5px;
+    }
+    .menu {
+        right: 7px;
+        top: 14px;
+    }
+    svg {
+        width: 55px !important;
+        height: 53px;
+    }
+    .common-heading {
+        font-size: 22px;
+    }
+    .filter-container .filtr-item {
+        width: 86%;
+    }
+}
+@media all and (max-width:264px){
+    .common-heading {
+        font-size: 8vw;
+    }
+}
 
 /* preloader responsive */
 @media screen and (max-width: 767px) {
@@ -158,5 +287,16 @@
 	/* Texto cargando */
 	.ctn-preloader .animation-preloader .txt-loading {
 	  font: bold 2em 'Montserrat', sans-serif;
+	}
+}
+@media screen and (max-width: 300px) {
+    .ctn-preloader .animation-preloader .spinner {
+		height: 7em;
+		width: 7em;
+	}
+
+	/* Texto cargando */
+	.ctn-preloader .animation-preloader .txt-loading {
+	  font: bold 1.5em 'Montserrat', sans-serif;
 	}
 }
