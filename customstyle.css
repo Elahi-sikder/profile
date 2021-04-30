@@ -459,6 +459,10 @@ img {
 
 /* =====================================================================
  ================== Portfolio css=================*/
+ .portfolio-area{
+    height: max-content;
+}
+
 .common-heading-portfolio {
   color: #fff;
   text-transform: uppercase;
@@ -477,31 +481,29 @@ img {
 .common-heading-portfolio span {
   color: #7b88ff;
 }
-.filter {
+.filter-control ul{
+  color: #fff;
   display: flex;
   justify-content: center;
 }
-.filter button {
-  margin-left: 15px;
+.filter-control ul li{
+  display: inline-block;
+  margin: 0 10px;
 }
-.grid {
+.filter-container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
-.element-item{
+.filter-container .filtr-item {
+  position: relative;
   width: 30%;
-  margin:10px 10px ;
-  cursor: pointer;
-  transition: all 0.5s;
+  height: 200px;
+  margin: 5px;
 }
-.element-item:hover{
-  opacity: 0.9;
-  transform: translateY(-10px);
-}
-.element-item img{
-  height: 250px;
- border-radius: 5px;
+.filter-container .filtr-item img{
+  width: 100%;
+  height:100%;
 }
 
 /* =====================================================================
