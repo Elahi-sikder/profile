@@ -538,7 +538,7 @@
         </div>
       </div>
       <!-- Portfolio area -->
-      <div class="portfolio-area mt-5 scrollspy"id="portfolio">
+      <div class="portfolio-area mt-5"id="portfolio">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 pt-5 m-auto text-center wow fadeInUpBig">
@@ -550,43 +550,40 @@
               </h1>
             </div>
           </div>
-          <div id="filters" class="button-group mt-5 filter wow fadeInUpBig">
-            <button
-              class="button is-checked btn btn-outline-primary active"
-              data-filter="*"
-            >
-              show all
-            </button>
-            <button class="button btn btn-outline-primary" data-filter=".web">
-              Web Design
-            </button>
-            <button class="button btn btn-outline-primary" data-filter=".html">
-              Psd To Html
-            </button>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="grid mt-5 wow fadeInUpBig">
-                <div class="element-item transition html " data-category="html">
-                  <img src="./image/psdtohtl6.png" alt="">
-                </div>
-                <div class="element-item transition html " data-category="html">
-                  <img src="./image/psdtohtml4.png" alt="">
-                </div>
-                <div class="element-item transition html " data-category="html">
-                  <img src="./image/psdtohtml5.png" alt="">
-                </div>
-                <div class="element-item transition web " data-category="web">
-                  <img src="./image/web-design.png" alt="">
-                </div>
-                <div class="element-item transition web " data-category="web">
-                  <img src="./image/web-design1.jpg" alt="">
-                </div>
-                <div class="element-item transition web " data-category="web">
-                  <img src="./image/web-design2.jpg" alt="">
-                </div>
+          <div class="row mt-lg-5 mt-md-5 mt-sm-5">
+            <div class="col-lg-12 col-md-12 col-sm-12">  
+              <div class="filter-control">
+                <ul>
+                  <li class="btn btn-primary list"data-filter="All">All</li>
+                  <li class="btn btn-outline-primary list"data-filter="web">Web Design</li>
+                  <li class="btn btn-outline-primary list"data-filter="html">Psd To Html</li>
+                </ul>
               </div>
             </div>
+          </div>
+          <div class="row">
+             <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="filter-container">
+                <div class="filtr-item web">
+                  <img src="./image/web-design.png" />
+                </div>
+                <div class="filtr-item web">
+                  <img src="./image/web-design1.jpg"  />
+                </div>
+                <div class="filtr-item web">
+                  <img src="./image/web-design2.jpg" />
+                </div>
+                <div class="filtr-item html">
+                  <img src="./image/psdtohtl6.png" />
+                </div>
+                <div class="filtr-item html">
+                  <img src="./image/psdtohtml4.png" />
+                </div>
+                <div class="filtr-item html">
+                  <img src="./image/psdtohtml5.png" />
+                </div>
+              </div>
+             </div>
           </div>
         </div>
       </div>
@@ -612,7 +609,7 @@
             <div class="col-lg-4 col-md-12 col-sm-12">
               <div class="touch-area text-white p-3 shadows text-center wow fadeInUpBig">
                 <i class="fa fa-briefcase fa-3x" aria-hidden="true"></i>
-                <h3 class="m-1">Marketplace Profile :</h3>
+                <h3 class="m-1 marketplace">Marketplace Profile :</h3>
                <a class="btn btn-primary" href="https://www.upwork.com/freelancers/~012712af807333b672"target="_blank" >Upwork</a>
                <a class="btn btn-primary" href="https://www.fiverr.com/elahisikder?up_rollout=true"target="_blank">Fiver</a>
                <a class="btn btn-primary" href="https://www.freelancer.com/u/alahicool"target="_blank">Freelancer</a>
@@ -679,8 +676,6 @@
     <script src="./wow/wow.js"></script>
     <!-- type animation -->
     <script src="./typermin/typer.min.js"></script>
-    <!-- isotope -->
-    <script src="./isotope/isotope_min.js"></script>
     <!-- bootstrap js -->
     <script src="./bootstrap5.0/js/bootstrap.min.js"></script>
     <!-- custom js -->
