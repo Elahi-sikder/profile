@@ -52,7 +52,7 @@ $('.list').click(function(){
 /*=====================Whatsapp menu js ==============================
 ===================================================================*/
 $('#mywhatsappButton').venomButton({
-  phone: '0096569912720',
+  phone: '+96569912720',
   chatMessage: 'Chat with me',
   message: "Type your message",
   nameClient: "jQuery Script",
