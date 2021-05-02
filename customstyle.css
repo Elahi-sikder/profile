@@ -284,14 +284,13 @@ img {
   margin-right: 10px;
 }
 
-
 /* =====================================================================
  ================== Main-content css=================*/
 
 .main-content {
   margin-left: 200px;
 }
-/* scroll icon */
+/* -------------------------------scroll icon-------------------------------------- */
 .scroll{
   position: fixed;
   right:20px;
@@ -307,7 +306,7 @@ img {
   transform: translateY(-5px);
 }
 .scroll.activated{
-  bottom: 45px;
+  bottom: 93px;;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
