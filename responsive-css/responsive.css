@@ -59,9 +59,9 @@
         width: 35%;
     }
     .common-heading-portfolio::before {
-        top: -67%;
-        width: 100%;
-        font-size: 8vw;
+        left: 18%;
+        top: -29%;
+        font-size: 7vw;
     }
 }
 
@@ -96,7 +96,7 @@
         transition: all 0.5s;
     }
     .scroll{
-        right: 60px;
+        right: 16px;
     }
     .sidenavactive{
         visibility: visible;
