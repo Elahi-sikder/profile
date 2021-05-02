@@ -24,7 +24,7 @@
   </head>
   <body class="no-scroll-y">
       <!-- Preloader -->
-        <div id="preloader">
+        <!-- <div id="preloader">
           <div id="ctn-preloader" class="ctn-preloader">
             <div class="animation-preloader">
               <div class="spinner"></div>
@@ -77,7 +77,7 @@
             <div class="loader-section section-left"></div>
             <div class="loader-section section-right"></div>
           </div>
-        </div>
+        </div> -->
     <!-- mobile-menu -->
     <button class="menu mobile-menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
       <svg width="100" height="100" viewBox="0 0 100 100">
@@ -219,11 +219,11 @@
             <ul class="text-white">
               <li><span>Birthday :</span> 31/12/1996</li>
               <li><span>City :</span> Tangail, Bangladesh</li>
-              <li><span>Website :</span> elahi.sikder</li>
+              <li><span>Website :</span>https://elahi-sikder.github.io/profile/</li>
               <li>
                 <span>Phone :</span> 008801620812333 / [0096569912720 whats app]
               </li>
-              <li><span>Age :</span> 27</li>
+              <li><span>Age :</span> <span id="age"></span></li>
               <li><span>Interest :</span> Coding,music,walking</li>
               <li><span>Mail :</span>alahi.cool@gmail.com</li>
               <li>
@@ -627,20 +627,20 @@
           <div class="row mt-5">
             <div class="col-lg-6 col-md-12 col-sm-12">
               <div class="form shadows p-3 text-white wow fadeInUpBig">
-                <form>
+                <form id="form">
                   <div class="mb-3">
                     <label for="exampleInputtext" class="form-label">Name*</label>
-                    <input type="text" class="form-control" id="exampleInputtext" placeholder="Type your name">
+                    <input type="text" name="Name" class="form-control form-nAme" id="exampleInputtext" placeholder="Type your name" maxlength="30" pattern="[a-zA-Z]+" title="Number or Special Character not Allowed" minlength="2" required>
                   </div>
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address*</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Type your email" aria-describedby="emailHelp">
+                    <input type="email" name="Email" class="form-control form-email" id="exampleInputEmail1" placeholder="Type your email" aria-describedby="emailHelp"required>
                   </div>
                   <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"placeholder="Type your message"></textarea>
+                    <textarea name="Message" class="form-control message" id="exampleFormControlTextarea1" rows="3"placeholder="Type your message" minlength="10" required></textarea>
                   </div>
-                  <button type="submit" class="btn btn-primary w-100" >Sent Message</button>
+                  <button type="submit"class="btn btn-primary w-100" name="Submit" value='Ok' >Sent Message</button>
                 </form>
               </div>
             </div>
