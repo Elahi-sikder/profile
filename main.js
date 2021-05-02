@@ -49,7 +49,18 @@ $('.list').click(function(){
         $('.menu').click(function(){
         $('.sidenav').toggleClass('sidenavactive')
         })
-
+/*=====================Whatsapp menu js ==============================
+===================================================================*/
+$('#mywhatsappButton').venomButton({
+  phone: '0096569912720',
+  chatMessage: 'Chat with me',
+  message: "Type your message",
+  nameClient: "jQuery Script",
+  showPopup: true,
+  position:"right",
+  zIndex: 7236,
+  size:'60px'
+});
 })
 
 
