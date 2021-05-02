@@ -158,6 +158,14 @@
 
 }
 @media all and (max-width:473px){
+    svg {
+        width: 50px !important;
+        height: 50px;
+    }
+    .menu {
+        right: 16px;
+        top: 17px;
+    }
     .my-banner-image {
         width: 44%;
     }
@@ -172,6 +180,10 @@
 
 
 @media all and (max-width:425px){
+    svg {
+        width: 50px !important;
+        height: 50px;
+    }
     .menu {
         right: 27px;  
     }
@@ -193,6 +205,10 @@
 
 }
 @media all and (max-width:375px){
+    svg {
+        width: 50px !important;
+        height: 50px;
+    }
     .common-heading::before {
         left: 0%;
         font-size: 13vw;
@@ -222,6 +238,10 @@
 }
 
 @media all and (max-width:316px){
+    svg {
+        width: 50px !important;
+        height: 50px;
+    }
     .common-heading::before {
         top: -49%;
         font-size: 16vw;
