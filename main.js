@@ -83,3 +83,32 @@ wow.init();
     }
     }
     scrolled()
+ /*=====================MY DYNAMIC AGE ==============================
+===================================================================*/
+  function myage() { 
+     let age = document.getElementById('age')
+     let mybirth = 1996
+     let currentdate = new Date().getFullYear()
+     let result = currentdate - mybirth
+     age.innerHTML = result
+   }
+   myage()
+ /*=====================Form validation and take user data==============================
+===================================================================*/
+let form = document.getElementById('form')
+form.addEventListener('submit',function(event){
+  event.preventDefault()
+  let formdata={};
+  [...this.elements].forEach((el)=>{
+    formdata[el.name] = el.value
+  })
+  alert('Message will send now....')
+  let objdata = JSON.stringify(formdata)
+  let question = prompt('Please Copy Your text and press OK.',objdata)
+  if(question){
+    window.location.href='https://m.me/elahi.sikder'
+  }else{
+    return false;
+  }
+  this.reset()
+})
