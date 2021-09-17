@@ -323,7 +323,7 @@ img {
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 1) 100%
     ),
-    url("./image/bann.jpg");
+    url("./image/bann.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
